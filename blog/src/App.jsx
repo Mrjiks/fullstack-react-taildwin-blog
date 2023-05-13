@@ -1,10 +1,14 @@
+import Menu from "./components/Menu";
 import { AboutPage, ArticlePage, ArticlesListPage, NavBar, HomePage, NotFoundPage } from "./pages";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import React, { useState } from "react";
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false);
   return (
     <Router>
-      <NavBar />
+      {showMenu && <Menu setShowMenu={setShowMenu} showMenu={showMenu} />}
+      <NavBar setShowMenu={setShowMenu} showMenu={showMenu} />
       <Routes>
         <Route path='/' element={<HomePage />} />
         <Route path='/about' element={<AboutPage />} />

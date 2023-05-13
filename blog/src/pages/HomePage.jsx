@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import ArticlesList from "../components/ArticleList";
 import { featuredArticles } from "../article-contents";
+import Menu from "../components/Menu";
 
 const HomePage = () => {
   return (
