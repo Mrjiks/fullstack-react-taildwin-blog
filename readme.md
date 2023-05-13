@@ -109,8 +109,4 @@ Contributions are welcome! If you find any issues or have suggestions for improv
 - Firestore
 - Vite
 
-## Contact
-
-For any questions or inquiries, please contact email@example.com.
-
 Enjoy blogging with React!
