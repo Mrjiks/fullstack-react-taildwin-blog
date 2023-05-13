@@ -13,13 +13,15 @@ const NavBar = ({ setShowMenu, showMenu }) => {
       </div>
       <div className='items-center hidden md:flex'>
         <nav className='items-center justify-around '>
-          <Link className='px-4 mx-4 hover:bg-black hover:text-white' to='/'>
+          <Link className='p-4 mx-4 hover:border-b-2 hover:bg-black hover:text-white' to='/'>
             Home
           </Link>
-          <Link className='px-4 mx-4 hover:bg-black hover:text-white' to='/about'>
+          <Link className='p-4 mx-4 hover:border-b-2 hover:bg-black hover:text-white' to='/about'>
             About
           </Link>
-          <Link className='px-4 mx-4 hover:bg-black hover:text-white' to='/articles'>
+          <Link
+            className='p-4 mx-4 hover:border-b-2 hover:bg-black hover:text-white'
+            to='/articles'>
             Posts
           </Link>
         </nav>
