@@ -7,15 +7,17 @@ function App() {
   const [showMenu, setShowMenu] = useState(false);
   return (
     <Router>
-      {showMenu && <Menu setShowMenu={setShowMenu} showMenu={showMenu} />}
-      <NavBar setShowMenu={setShowMenu} showMenu={showMenu} />
-      <Routes>
-        <Route path='/' element={<HomePage />} />
-        <Route path='/about' element={<AboutPage />} />
-        <Route path='/articles' element={<ArticlesListPage />}></Route>
-        <Route path='/articles/:articleId' element={<ArticlePage />} />
-        <Route path='*' element={<NotFoundPage />}></Route>
-      </Routes>
+      <div className='container m-auto'>
+        {showMenu && <Menu setShowMenu={setShowMenu} showMenu={showMenu} />}
+        <NavBar setShowMenu={setShowMenu} showMenu={showMenu} />
+        <Routes>
+          <Route path='/' element={<HomePage />} />
+          <Route path='/about' element={<AboutPage />} />
+          <Route path='/articles' element={<ArticlesListPage />}></Route>
+          <Route path='/articles/:articleId' element={<ArticlePage />} />
+          <Route path='*' element={<NotFoundPage />}></Route>
+        </Routes>
+      </div>
     </Router>
   );
 }
