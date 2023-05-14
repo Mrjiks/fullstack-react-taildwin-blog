@@ -9,7 +9,7 @@ const AboutPage = () => {
 
         return (
           <div key={id}>
-            <div className='flex flex-col p-4 transition-all'>
+            <div className='container flex flex-col justify-center p-4 m-auto transition-all'>
               <img
                 className='object-cover rounded-lg w-96 h-50'
                 src={url}

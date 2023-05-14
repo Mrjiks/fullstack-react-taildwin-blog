@@ -13,19 +13,19 @@ export const articles = [
   },
   {
     id: 3,
-    title: "Take a break",
+    title: "Time to Master Next Js",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste,labore facilis quam dicta architecto alias.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.",
   },
   {
     id: 4,
-    title: "Take a break",
+    title: "Learn Svelte",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste,labore facilis quam dicta architecto alias.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.",
   },
   {
     id: 5,
-    title: "Take a break",
+    title: "Master GraphQl",
     content:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste,labore facilis quam dicta architecto alias.Lorem ipsum dolor sit ametconsectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt nulla nostrum quo atque? Iste, labore facilis quam dicta architecto alias.",
   },

@@ -5,7 +5,7 @@ import { TfiClose } from "react-icons/tfi";
 
 const NavBar = ({ setShowMenu, showMenu }) => {
   return (
-    <div className='container flex z-50 justify-between inset-0 overflow-hidden bg-orange-300 md:sticky md:px-10 max-auto'>
+    <div className='container flex z-50 justify-between sticky inset-0 w-full m-auto overflow-hidden bg-orange-600 md:px-10'>
       <div className='flex items-center h-20 p-4 rounded-lg shadow-lg '>
         <Link to={`/articles`}>
           <span className='font-extrabold text-white hover:text-black '>ᗰᖇᒍIKᔕ</span>
@@ -26,12 +26,21 @@ const NavBar = ({ setShowMenu, showMenu }) => {
           </Link>
         </nav>
       </div>
-      <div className='flex items-center md:hidden'>
-        <FiMenu
-          className='w-auto h-20 font-bold text-white'
-          onClick={() => setShowMenu(!showMenu)}
-        />
-      </div>
+      {!showMenu ? (
+        <div className='flex items-center md:hidden'>
+          <FiMenu
+            className='w-auto h-20 font-bold text-white'
+            onClick={() => setShowMenu(!showMenu)}
+          />
+        </div>
+      ) : (
+        <div className='flex items-center p-2 shadow-lg md:hidden'>
+          <TfiClose
+            className='flex items-center w-auto h-10 mt-6 mr-4 font-bold text-white'
+            onClick={() => setShowMenu(!showMenu)}
+          />
+        </div>
+      )}
     </div>
   );
 };
